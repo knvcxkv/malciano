@@ -1,0 +1,261 @@
+ /* configuração do html e body */
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+ }
+
+ /* fundo */
+ .background {
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+         url('../assets/img/background_fundo.jpg');
+     height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     opacity: 0.9;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .text_top {
+     color: antiquewhite;
+     font-size: 23px;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     margin-top: 15px;
+     justify-content: center;
+ }
+
+ .icones {
+     width: 100%;
+     display: flex;
+     margin-top: 10px;
+     height: 100%;
+     justify-content: center;
+     column-gap: 45px;
+ }
+
+ .face_image {
+     background-image: url(../assets/img/facebook.png);
+     height: 32px;
+     width: 32px;
+     box-shadow: 0px 2px 10px rgb(26, 25, 25);
+     cursor: pointer
+ }
+
+ .insta_image {
+     background-image: url(../assets/img/instagram.png);
+     height: 32px;
+     width: 32px;
+     box-shadow: 0px 2px 10px rgb(26, 25, 25);
+     cursor: pointer
+ }
+
+ .whats_image {
+     background-image: url(../assets/img/whatsapp.png);
+     height: 32px;
+     width: 32px;
+     box-shadow: 0px 2px 10px rgb(26, 25, 25);
+     cursor: pointer;
+ }
+
+
+ /* card */
+ .card {
+     display: flex;
+     height: 470px;
+     width: 350px;
+     background-color: #fff;
+     border-radius: 4%;
+     flex-direction: column;
+ }
+
+
+ .div_suspensa {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    background-color: #044191;
+    height: 145px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px rgb(20, 20, 20);
+    margin-top: -40px;
+    
+ }
+
+
+ .card_top {
+     height: 35%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /* Card container com os textbox, button...*/
+ .card_main {
+     margin: 24px;
+     display: flex;
+     width: calc(100% -48px);
+     flex-direction: column;
+     align-items: center;
+     justify-content: end;
+ }
+
+ /* Textbox do usuario */
+ .input_nome {
+ 
+     width: 100%;
+     height: 34px;
+     border-radius: 7px;
+     text-indent: 8px;
+     font-size: 16px;
+     border: solid 2px #044191;
+
+ }
+
+ .input_nome:focus {
+     outline: none !important;
+     border: 2px solid rgb(41, 106, 247);
+     box-shadow: 0 0 10px #719ECE;
+ }
+
+ /* Textbox da senha */
+ .input_senha {
+     width: 100%;
+     height: 34px;
+     border-radius: 7px;
+     margin-top: 15px;
+     text-indent: 8px;
+     font-size: 16px;
+     border: solid 2px #044191;
+ }
+
+ .input_senha:focus {
+     outline: none !important;
+     border: 2px solid rgb(41, 106, 247);
+     box-shadow: 0 0 10px #719ECE;
+ }
+
+ /* Inicio do Style do Botão switch */
+ .btn_sw {
+     display: flex;
+     width: 100%;
+     align-items: center;
+ }
+
+ .switch {
+     position: relative;
+     display: inline-block;
+     width: 30px;
+     height: 17px;
+     margin-top: 15px;
+     margin-bottom: 10px;
+ }
+
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgb(233, 233, 233);
+     -webkit-transition: .4s;
+     transition: .4s;
+ }
+
+ .slider:before {
+     position: absolute;
+     content: "";
+     height: 15px;
+     width: 15px;
+     left: 0px;
+     bottom: 0px;
+     background: radial-gradient(#b9bbbd, #fdfdfd);
+     -webkit-transition: .4s;
+     transition: .4s;
+     border: solid 1px #d1d0d0;
+ }
+
+ input:checked+.slider {
+     background-color: #494949;
+ }
+
+ input:checked+.slider:before {
+     -webkit-transform: translateX(13px);
+     -ms-transform: translateX(13px);
+     transform: translateX(13px);
+ }
+
+ .slider.round {
+     border-radius: 34px;
+ }
+
+ .spn {
+     margin-left: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 13px;
+ }
+
+ .slider.round:before {
+     border-radius: 50%;
+ }
+
+ /* Fim do Style do Botão switch */
+
+ /* Inicio do Style do button login */
+ .btn_login {
+     display: flex;
+     width: 100%;
+     height: 34px;
+     border-radius: 7px;
+     margin-top: 30px;
+     background-color: #044191;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #fff;
+     -webkit-transition: all 0.7s ease;
+     transition: all 0.3s ease;
+     border: 3px solid #044191;
+
+ }
+
+
+ .btn_login:hover {
+     background-color: rgb(38, 117, 219);
+     cursor: pointer;
+     box-shadow: 2px 2px 5px rgb(34, 32, 32);
+     -webkit-transform: scale(1.0);
+     transform: scale(1.0);
+     border: 3px solid rgb(38, 117, 219);
+     ;
+ }
+
+ /* Fim do Style do button login */
+
+
+ .text_footer {
+     display: flex;
+     margin: 30px 0px 20px 0px;
+     font-family: Helvetica, sans-serif;
+     font-size: 15px;
+     color: #494949;
+
+ }
+
+ .link_signUp {
+     margin-left: 5px;
+     font-weight: bold;
+     color: #044191;
+
+ }
+
+ .link_signUp:hover {
+     cursor: pointer;
+     color: #0870f8;
+ }

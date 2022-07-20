@@ -1,0 +1,196 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.containerMenuLateral {
+    height: 100%;
+    width: 100%;
+}
+
+.selfUser {
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.userImg {
+    border: 1px inset rgb(2, 39, 73);
+    border-radius: 50%;
+    background: #f0f2f5;
+    height: 5rem;
+    width: 5rem;
+    background: url("../imagens/user.png") no-repeat center /7.7rem;
+    box-shadow: 1px 1px 3px white;
+}
+
+body {
+    display: flex;
+    background: #f0f2f5;
+}
+
+.menuLateral {
+    display: flex;
+    position: fixed;
+    margin: 1rem;
+    padding: 0;
+    height: calc(100vh - 2rem);
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    background-image: radial-gradient(circle at center, rgb(15, 15, 15) 0, rgb(71, 71, 71) 100%)
+}
+
+.conteudo {
+    margin-left: 17.5rem;
+}
+
+@media screen and (max-width:800px) {
+    .menuLateral {
+        display: none;
+    }
+
+    .conteudo {
+        display: flex;
+        margin-left: 10rem;
+    }
+
+    .painel {
+        width: 800px;
+    }
+
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn {
+    height: 2rem;
+    width: 90%;
+    background-image: radial-gradient(rgb(6, 77, 158) 0, rgb(9, 97, 119) 100%);
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 1em sans-serif;
+    font-weight: bolder;
+    color: #c2c5c9;
+}
+
+.btn:hover {
+    background-image: radial-gradient(rgb(7, 73, 148) 0, rgb(8, 86, 105) 100%);
+    box-shadow: 1px 1px 5px rgb(3, 130, 214);
+    cursor: pointer;
+    width: 91%;
+    color: #ffffff;
+}
+
+
+
+.section {
+    margin-top: 0;
+}
+
+.menuHeader {
+    width: calc(100vw - 22rem);
+    height: 5rem;
+    display: flex;
+    margin-top: 0;
+}
+
+.container {
+    width: 20%;
+}
+
+.painel {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+}
+
+.config {
+    padding: 5px;
+    background: url("../imagens/settings.png") no-repeat right / 1.1em;
+    height: 1.3rem;
+    width: 1.3rem;
+    cursor: pointer;
+}
+
+.alerts {
+    background: url("../imagens/notifications.png") no-repeat right / 1.1em;
+    height: 1.3rem;
+    width: 1.3rem;
+    cursor: pointer;
+}
+
+.seach {
+    background: url("../imagens/search.png") no-repeat right / 1.3em;
+    margin-right: 5px;
+    text-indent: 5px;
+    padding: 5px;
+}
+
+.signIn {
+    background: url("../imagens/person.png") no-repeat left / 1.3em;
+    text-indent: 1.3rem;
+    cursor: default;
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.suspenso {
+
+    width: calc(100vw - 23rem);
+    height: 4rem;
+    background-image: radial-gradient(circle at center, rgb(15, 15, 15) 0, rgb(71, 71, 71) 100%);
+    border-radius: 0.5rem;
+    margin-top: 1.3rem;
+    box-shadow: 1px 1px 7px black;
+    margin-top: -2rem;
+
+}
+
+.test {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_main {
+    border-radius: 0.5rem;
+    width: calc(100vw - 19rem);
+    height: 34rem;
+    background: rgb(255, 255, 255);
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.line {
+    height: 3rem;
+
+    border-top : 1px solid rgb(228, 225, 225);
+    border-bottom : 1px solid rgb(221, 218, 218);
+    width: 100%;
+   
+}
